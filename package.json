@@ -1,0 +1,36 @@
+{
+  "name": "managua",
+  "version": "0.1.0",
+  "description": "Intelligent personal assistant with MCP integration",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx convex dev",
+    "deploy": "bunx convex deploy",
+    "cli": "bun src/cli/index.ts",
+    "discord": "bun src/discord/bot.ts",
+    "test:integration": "bun tests/integration.test.ts",
+    "build": "bunx tsc",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "keywords": ["ai", "assistant", "notion", "fastmail", "para"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "convex": "^1.16.0",
+    "ai": "^3.4.0",
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "discord.js": "^14.14.1",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8",
+    "winston": "^3.13.0",
+    "dockerode": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "tsx": "^4.7.2",
+    "@types/dockerode": "^3.3.23"
+  }
+}

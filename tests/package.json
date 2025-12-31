@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "test:integration": "tsx tests/integration.test.ts",
+    "test:watch": "tsx watch tests/integration.test.ts"
+  }
+}
